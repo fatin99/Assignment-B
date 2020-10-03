@@ -11,4 +11,4 @@
 1. Clone the repo
 2. npm i
 3. npm run start
-4. Go to http://localhost:8080/
+4. Go to http://localhost:4040/

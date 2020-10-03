@@ -3,7 +3,7 @@ let app = express();
 let mongoose = require('mongoose');
 let morgan = require('morgan');
 let bodyParser = require('body-parser');
-let port = 8080;
+let port = 4040;
 let routes = require('./app/routes/moduleRoute');
 let config = require('config'); 
 const cors = require("cors");
@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 
 routes(app);
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 4040;
 var server = app.listen(port);
 
 app.use((req, res) => {
