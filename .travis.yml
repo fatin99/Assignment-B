@@ -16,3 +16,4 @@ before_script:
 script:
  — mocha-phantomjs out/test/index.html
  — make test
+ — npm run test
