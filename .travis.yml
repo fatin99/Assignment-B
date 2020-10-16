@@ -1,6 +1,11 @@
 language: node_js
 node_js:
     - stable
+install: 
+    - cd backend
+    - npm install
 services:
     - mongodb
-script: build.sh
+script: 
+    - cd backend
+    - npm run test
