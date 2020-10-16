@@ -30,7 +30,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/json'}));
 
 app.get("/", (req, res) => {
-    res.json({message: "Welcome to NUSMods BETA!"})
+    res.json({message: "TEST CLOUD BUILD:Welcome to NUSMods BETA!"})
 });
 
 routes(app);
