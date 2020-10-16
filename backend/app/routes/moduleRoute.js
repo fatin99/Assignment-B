@@ -5,6 +5,7 @@ module.exports = app => {
         .get(mod.getModules)
         .post(mod.postModule);
     app.route("/module/:id")
+        .get(mod.getAModule)
         .delete(mod.deleteModule)
         .put(mod.updateModule);
 };

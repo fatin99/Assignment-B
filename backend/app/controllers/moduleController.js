@@ -21,6 +21,13 @@ function postModule(req, res) {
     });
 }
 
+function getAModule (req, res) {
+    Mod.findById(req.params.id, (err, module) => {
+        if(err) res.send(err);
+        res.json(module);
+    });
+  };
+
 function deleteModule(req, res) {
     Mod.remove({_id : req.params.id}, (err, result) => {
         res.json({ message: "mod successfully deleted!", result });
@@ -38,4 +45,4 @@ function updateModule(req, res) {
 }
 
 //export all the functions
-module.exports = { getModules, postModule, deleteModule, updateModule };
+module.exports = { getModules, postModule, getAModule, deleteModule, updateModule };
