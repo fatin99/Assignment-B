@@ -7,5 +7,4 @@ install:
 services:
     - mongodb
 script: 
-    - cd backend
     - npm run test
