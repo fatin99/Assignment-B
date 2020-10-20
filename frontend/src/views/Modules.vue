@@ -8,7 +8,7 @@
           <th>Title</th>
           <th>Department</th>
           <th>Credits</th>
-          <th colspan="3"></th>
+          <th>Remove</th>
         </tr>
       </thead>
       <tr v-for="(mod, i) in mods" :key="i">
