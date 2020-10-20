@@ -23,17 +23,17 @@ export default new Router({
     },
     {
       path: '/module/new',
-      name: 'new-module',
+      name: 'create',
       component: Create
     },
     {
       path: '/module/:id',
-      name: 'show',
+      name: 'read',
       component: Read
     },
     {
       path: '/module/:id/edit',
-      name: 'edit',
+      name: 'update',
       component: Update
     },
   ]

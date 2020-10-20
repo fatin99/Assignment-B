@@ -13,7 +13,7 @@
       </thead>
       <tr v-for="(mod, i) in mods" :key="i">
         <td>
-          <router-link :to="{ name: 'show', params: { id: mod._id }}">{{ mod.code }}</router-link>
+          <router-link :to="{ name: 'read', params: { id: mod._id }}">{{ mod.code }}</router-link>
         </td>
         <td>{{ mod.title }}</td>
         <td>{{ mod.department }}</td>
@@ -30,7 +30,7 @@
 import { api } from '../helpers/helpers';
 
 export default {
-  name: 'mods',
+  name: 'modules',
   data() {
     return {
       mods: []

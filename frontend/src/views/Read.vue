@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Show Module</h1>
+    <h1> Module</h1>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
@@ -27,7 +27,7 @@
       <input type="number" readonly  :value="mod.credits"/>
     </div>
     <div class="actions">
-      <router-link :to="{ name: 'edit', params: { id: this.$route.params.id }}">
+      <router-link :to="{ name: 'update', params: { id: this.$route.params.id }}">
         Edit Module
       </router-link>
     </div>
@@ -38,7 +38,7 @@
 import { api } from '../helpers/helpers';
 
 export default {
-  name: 'show',
+  name: 'read',
   data() {
     return {
       mod: ''

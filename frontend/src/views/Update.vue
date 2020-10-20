@@ -10,7 +10,7 @@ import ModuleForm from '../components/ModuleForm.vue';
 import { api } from '../helpers/helpers';
 
 export default {
-  name: 'edit',
+  name: 'update',
   components: {
     'module-form': ModuleForm
   },

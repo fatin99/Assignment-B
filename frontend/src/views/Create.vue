@@ -10,7 +10,7 @@ import ModuleForm from '../components/ModuleForm.vue';
 import { api } from '../helpers/helpers';
 
 export default {
-  name: 'new-module',
+  name: 'create',
   components: {
     'module-form': ModuleForm
   },
